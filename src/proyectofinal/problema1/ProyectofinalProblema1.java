@@ -4,8 +4,6 @@
  * and open the template in the editor.
  */
 package proyectofinal.problema1;
-
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,6 +14,11 @@ public class ProyectofinalProblema1 {
 
     /**
      * @param args the command line arguments
+     * 
+     * Johanna Daniela Macías Martínez A01411534
+   Iván Constantino Hernández A01411529
+   Maythe Portales Barrios A01411461
+   Luisa Fernanda Sosa Brambila A01411485
      */
     public static void main(String[] args) {
             int tamano=solicitaentero("Escribe el número de materias");
@@ -24,9 +27,6 @@ public class ProyectofinalProblema1 {
             imprimirarreglo(arreglo,materias);    
     }
     
-    
-    
-    
      public static String[] nombrematerias(int tamano){
 
          String []materias= new String[tamano];
@@ -34,10 +34,7 @@ public class ProyectofinalProblema1 {
             materias[i]=JOptionPane.showInputDialog("Teclea el nombre de la materia "+(i+1)+": ");            
         } 
         return materias;
-        }
-     
-     
-     
+        }    
      
        public static double[][] arreglo(int tamano,String materia[]){
 
@@ -50,8 +47,7 @@ public class ProyectofinalProblema1 {
         }
         }
         return arreglo;
-        }
-    
+        }  
             
          public static void imprimirarreglo(double [][]a, String materia[]){
         double suma=0,prom=0;
@@ -62,12 +58,10 @@ public class ProyectofinalProblema1 {
             prom=suma/3;
         }
         System.out.println();
-        JOptionPane.showMessageDialog(null, "Promedio de la materia "+materia[i]+":\n"+ prom);
+        JOptionPane.showMessageDialog(null, "Promedio de la materia "+materia[i]+":\n"+ prom,"Promedio",1);
         prom=0;
-        suma=0;
-            
-        }
-            
+        suma=0;   
+        }         
         }
          
          public static int solicitaentero(String men){
@@ -80,7 +74,7 @@ public class ProyectofinalProblema1 {
                 num = Integer.parseInt(dato);
                  flag=false;}
                     catch(Exception e){
-                JOptionPane.showMessageDialog(null,"Error");
+                JOptionPane.showMessageDialog(null, "No tecleaste un número entero","Error",0);
                 flag=true;
             }
                      
@@ -100,7 +94,7 @@ public class ProyectofinalProblema1 {
             }
             catch(Exception e){
 
-                JOptionPane.showMessageDialog(null, "Error");
+                JOptionPane.showMessageDialog(null, "No tecleaste un número","Error",0);
                 flag=true;
             }
         }
