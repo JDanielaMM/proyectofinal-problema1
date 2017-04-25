@@ -74,27 +74,7 @@ public class ProyectofinalProblema1 {
         int num=0;
         boolean flag;
         do{
-            
-                /*String[] options = { "CANCELAR", "IMPRIMIR" };      
-                int resp= JOptionPane.showOptionDialog(null, "Elige imprimir o cancelar", "Aviso",
-                JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
-                null, options, options[0]);
-                if(resp==0){
-                flag=false;
-                }*/
-                
-       /* int codigo=JOptionPane.showConfirmDialog(null, men, "Calificaciones", JOptionPane.OK_CANCEL_OPTION, JOptionPane.ERROR_MESSAGE);
-        
-        if (codigo==JOptionPane.OK_OPTION){
-            System.out.println("Has pulsado en SI");
-            flag=false;
-        }else if(codigo==JOptionPane.CANCEL_OPTION){
-            System.out.println("Adios!");
-        flag=false;
-                }
-                else{*/
-
-
+   
                     try{
                 String dato = JOptionPane.showInputDialog(men);
                 num = Integer.parseInt(dato);
