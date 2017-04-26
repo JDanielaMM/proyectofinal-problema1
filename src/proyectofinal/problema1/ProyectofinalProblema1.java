@@ -43,7 +43,8 @@ public class ProyectofinalProblema1 {
         for (int i=0; i<tamano;i++){
         for (int j=0;j<3;j++){
         
-        arreglo[i][j]= solicitadouble("Escribe la calificación del parcial: "+(j+1)+": ");
+        arreglo[i][j]= solicitadouble("Escribe la calificación del parcial"
+                + " "+(j+1)+": ");
         }
         }
         return arreglo;
